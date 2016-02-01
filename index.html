@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-	<title="Личный проект «Глейси»"></title>
+	<title>Личный проект «Глейси»></title>
   </head>
   <body>
     <header class="main-header">
 	  <div class="container">
-	    <a class="logo" href="#"><img src="http://placehold.it/150x100"></a>
+	    <a class="logo" href="#">
+		  <img src="http://placehold.it/150x100">
+		</a>
 		<nav class="main-navigation">
           <ul>
             <li>
@@ -24,82 +26,104 @@
 		<div class="user-block">
 		  <a class="search"></a>
 		  <a class="login">Вход</a>
-		  <output name="sum">Пусто</output>
+		  <a class="cart">Пусто</a>
 		</div>
-        <div class="schedule">
-		  с 10 до 20 ,ежедневно<br><span>8 812 450-25-25</span>
-		</div>
+        <div class="schedule">с 10 до 20 ,ежедневно</div>
+		<div class="phone"><a href="tel:88124502525">8 812 450-25-25</a></div>
       </div>		
 	</header>
 	<main>
 	  <div class="container">
 	    <article class="slider">
-		  <input type="radio" id="btn-1" name="toggle">
-		  <input type="radio" id="btn-2" name="toggle">
-		  <input type="radio" id="btn-2" name="toggle">
-		  <div class="slider-controls">
-		    <label for="btn-1"></label>
-			<label for="btn-2"></label>
-			<label for="btn-3"></label>
-		  </div>
-          <div class="slider-1">
+		  <div class="slider-1">
             <h1>Крем-брюле и пломбир с малиновым джемом</h1>
             <a class="button" href="#">Давайте оба!</a>
 		  </div>
-		  <div class="slider-2"></div>
-		  <div class="slider-2"></div>
-		</article> 
-        <article class="free raspberry">
-		  <h2>Малинка даром!</h2>
-		  <p>При покупке 2кг любого фруктого мороженого,добавим в ваш заказ банку малинового варенья бесплатно.</p>
-		  <a class="button" href="#">Хочу варенья!</a>
-        </article>
-        <article class="free chocolate">
-		  <h2>Шоколадки даром!</h2>
-		  <p>При покупке 2кг пломбира,добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-		  <a class="button" href="#">Хочу шоколадки!</a>
-        </article>
+		  <ul class="slider-controls">
+		    <li>
+		  	  <a class="active" href="#"></a>
+		  	</li>
+		  	<li>
+		  	  <a href="#"></a>
+		  	</li>
+		  	<li>
+		  	  <a href="#"></a>
+		  	</li>
+		  </ul>
+		</article>
+        <section class="free">		
+          <article class="free-raspberry">
+		    <h2>Малинка даром!</h2>
+		    <p>При покупке 2кг любого фруктого мороженого,добавим в ваш заказ банку малинового варенья бесплатно.</p>
+		    <a class="button" href="#">Хочу варенья!</a>
+          </article>
+          <article class="free-chocolate">
+		    <h2>Шоколадки даром!</h2>
+		    <p>При покупке 2кг пломбира,добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+		    <a class="button" href="#">Хочу шоколадки!</a>
+          </article>
+		</section>
         <section class="icecream">
 		  <article class="cream orange">
-		    <span class="price">310</span>/кг
+		    <div class="popular">Хит</div>
+		    <div class="price">310</div>
+			<div class="mass">/кг</div>
 			<a href="#">Сливочное с апельсиновым джемом и цитрусовой струйкой</a>
 		  </article>
 		  <article class="cream coffee">
-		    <span class="price">380</span>/кг
+		    <div class="popular">Хит</div>
+		    <div class="price">380</div>
+			<div class="mass">/кг</div>
 			<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 		  </article>
 		  <article class="cream strawberry">
-		    <span class="price">355</span>/кг
+		    <div class="popular">Хит</div>
+		    <div class="price">355</div>
+			<div class="mass">/кг</div>
 			<a href="#">Сливочно-клубничный с присипкой из белого шоколада</a>
 		  </article>
 		  <article class="cream caramel">
-		    <span class="price">415</span>/кг
+		  <div class="popular">Хит</div>
+		    <div class="price">415</div>
+			<div class="mass">/кг</div>
 			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 		  </article>
         </section>	
         <article class="shop-info">
 		  <h3>Магазин Глейси-это офлайн и онлайн магазин по продаже собственного мороженого на развес</h3>
-		  <p class="details">Все наше мороженое изготавливается на собственном производстве,
-		     с использованием современного оборудования и проверенных временем технологий</p>
-		  <p class="details">Закупка ингредиентов производится толко у проверенных фермерских хозяйств и компаний,
-		     с которыми нас связывает долговременное сотрудничество.</p>
-		  <p class="details">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-		     Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</p>
-		  <p class="details">Доставка нашего мороженого до заказчиков осушествляется в специальном термопаке, 
-		     которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+		  <div class="details">
+		    <div class="details-left">
+			  <div class="details-left-top">Все наше мороженое изготавливается на собственном производстве,
+		     с использованием современного оборудования и проверенных временем технологий
+			  </div>
+		      <div class="details-left-bottom">Закупка ингредиентов производится толко у проверенных фермерских хозяйств и компаний,
+		     с которыми нас связывает долговременное сотрудничество.
+			  </div>
+			</div>
+		    <div class="details-right">
+			  <div class="details-right-top">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+		     Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.
+			  </div>
+		      <div class="details-right-bottom">Доставка нашего мороженого до заказчиков осушествляется в специальном термопаке, 
+		     которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+			  </div>
+		    </div>
+          </div>			
         </article>	
-        <div class="blog">
- 		  <p>Новое в нашем блоге</p>
-		  <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-		</div>
-        <div class="subscription">
-		  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.
+        <section class="add-info">
+		  <div class="blog">
+ 		    <p>Новое в нашем блоге</p>
+		    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		  </div>
+          <div class="subscription">
+		    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.
 		     Обещаем не спамить и не слать всякой не нужной ерунды.Честно =)</p>
-		  <form action="#" method="post">
-		    <input type="email" name="email" placeholder="Электронная почта">
-			<input type="submit" value="Отправить" class="button">
-		  </form>	
-		</div>
+		    <form action="#" method="post">
+		      <input type="email" name="email" placeholder="Электронная почта">
+			  <input type="submit" value="Отправить" class="button">
+		    </form>	
+		  </div>
+		</section>
 	  </div>
       <div class="map">
 	    <div class="container">
@@ -116,20 +140,48 @@
     <footer class="main-footer">
 	  <div class="container">
 	    <section class="footer-social">
-		  <a class="social social-tw" href="#"><a/>
-		  <a class="social social-ins" href="#"><a/>
-		  <a class="social social-fb" href="#"><a/>
-		  <a class="social social-vk" href="#"><a/>
+		  <ul>
+		    <li>
+			  <a class="social social-tw" href="#">tw<a/>
+			</li>
+		    <li>
+			  <a class="social social-ins" href="#">ins<a/>
+			</li>
+		    <li>
+			  <a class="social social-fb" href="#">fb<a/>
+			</li>
+		    <li>
+			  <a class="social social-vk" href="#">vk<a/>
+			</li>
+		  </ul>
 		</section>
 		<section class="footer-reference">
-		  <a href="#">Для поставщиков</a>
-		  <a href="#">Наши документы</a>
-		  <a href="#">О производстве</a>
-		  <a href="#">Экологические стандарты</a>
+		  <ul class="reference-left">
+		    <li>
+			  <a href="#">Для поставщиков</a>
+			</li>  
+		    <li>
+			  <a href="#">О производстве</a>
+			</li>
+	      </ul>
+		  <ul class="reference-right">
+		    <li>
+			  <a href="#">Наши документы</a>
+			</li>
+		    <li>
+			  <a href="#">Экологические стандарты</a>
+			</li>
+		  </ul>
 		</section>
 		<section class="footer-copyright">
-		  <a class="footer-icon" href="www.htmlacademy.ru">html<br>academy</a>
-		  Сделано в <a href="www.htmlacademy.ru">HTML Academy</a> © 2016 
+		  <div class="cite-icon">
+		    <a href="https://htmlacademy.ru/">
+			  <img src="http://placehold.it/150x100">
+			</a>
+		  </div>
+		  <div class="cite-info">Сделано в
+		   <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016
+          </div>		   
 		</section>
 	  </div>	
     </footer>  	  
