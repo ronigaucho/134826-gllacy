@@ -7,14 +7,14 @@
   </head>
   <body>
     <header class="main-header">
-	  <div class="container">
+	  <div class="container clearfix">
 	    <a class="logo" href="#">
 		  <img src="img/index-logo.svg" alt="main-logo">
 		</a>
 		<nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Каталог</a>
+              <a class="active" href="#">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -25,16 +25,18 @@
           </ul>
         </nav>
 		<div class="user-block">
-		  <a class="search"></a>
-		  <a class="login">Вход</a>
-		  <a class="cart">Пусто</a>
+		  <div class="user-block-icons">
+		    <a class="search"></a>
+		    <a class="login">Вход</a>
+		    <a class="cart">Пусто</a>
+		  </div>
+		  <div class="schedule">с 10 до 20 ,ежедневно</div>
+		  <div class="phone"><a href="tel:88124502525">8 812 450-25-25</a></div>
 		</div>
-		<div class="schedule">с 10 до 20 ,ежедневно</div>
-		<div class="phone"><a href="tel:88124502525">8 812 450-25-25</a></div>
       </div>		
 	</header>
 	<main>
-	  <div class="container">
+	  <div class="container clearfix">
 	    <ul class="breadcrumbs">
 	      <li>
 		    <a href="#">Главная</a>
@@ -46,7 +48,7 @@
 		    <a class="active">Сливочное</a>
 		  </li>
 	    </ul>
-		<h1>Сливочное мороженое</h1>
+		<h2>Сливочное мороженое</h2>
 		<div class="choice">
 		  <div class="title">Сортировка:</div>
 		  <div class="option">
@@ -81,17 +83,20 @@
 		<div class="choice">
 		  <div class="title">Наполнители:</div>
 		  <div class="option">
-		    <label><input type="checkbox" checked>шоколадные<label>
-		    <label><input type="checkbox" checked>сахарные присыпки</label>
-		    <label><input type="checkbox">фрукты</label>
-		    <label><input type="checkbox">сиропы</label>
-		    <label><input type="checkbox">джемы</label>
+		    <input type="checkbox" id="check-1" checked>
+			  <label for="check-1">шоколадные</label>
+		    <input type="checkbox" id="check-2" checked>
+			  <label for="check-2">сахарные присыпки</label>
+		    <input type="checkbox" id="check-3">
+			  <label for="check-3">фрукты</label>
+		    <input type="checkbox" id="check-4">
+			  <label for="check-4">сиропы</label>
+		    <input type="checkbox" id="check-5">
+			  <label for="check-5">джемы</label>
 		  </div>
 		</div>
 		<div class="choice">
-		  <div class="option">
-		    <input type="submit" value="Применить">
-		  </div>
+		  <input type="submit" value="Применить">
 		</div>
 		<section class="icecream">
 		  <article class="cream orange">
@@ -167,20 +172,20 @@
 	  </div>
 	</main>  
     <footer class="main-footer">
-	  <div class="container">
+	  <div class="container clearfix">
 	    <section class="footer-social">
 		  <ul>
 		    <li>
-			  <a class="social social-tw" href="#">tw<a/>
+			  <a class="social social-tw" href="#">tw</a>
 			</li>
 		    <li>
-			  <a class="social social-ins" href="#">ins<a/>
+			  <a class="social social-ins" href="#">ins</a>
 			</li>
 		    <li>
-			  <a class="social social-fb" href="#">fb<a/>
+			  <a class="social social-fb" href="#">fb</a>
 			</li>
 		    <li>
-			  <a class="social social-vk" href="#">vk<a/>
+			  <a class="social social-vk" href="#">vk</a>
 			</li>
 		  </ul>
 		</section>
@@ -205,7 +210,7 @@
 		<section class="footer-copyright">
 		  <div class="cite-icon">
 		    <a href="https://htmlacademy.ru/">
-			  <img src="http://placehold.it/150x100">
+			  <img src="img/index-footerLogo.svg">
 			</a>
 		  </div>
 		  <div class="cite-info">Сделано в
