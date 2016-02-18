@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 	<title>Личный проект «Глейси»</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,8 +15,8 @@
 		</a>
 		<nav class="main-navigation">
           <ul>
-            <li>
-              <a class="active" href="#">Каталог</a>
+            <li class="active">
+              <a href="#">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -30,7 +32,7 @@
 		    <a class="login">Вход</a>
 		    <a class="cart">Пусто</a>
 		  </div>
-		  <div class="schedule">с 10 до 20 ,ежедневно</div>
+          <div class="schedule">с 10 до 20 ,ежедневно</div>
 		  <div class="phone"><a href="tel:88124502525">8 812 450-25-25</a></div>
 		</div>
       </div>		
@@ -48,7 +50,7 @@
 		    <a class="active">Сливочное</a>
 		  </li>
 	    </ul>
-		<h2>Сливочное мороженое</h2>
+		<h2 class="catalog-header">Сливочное мороженое</h2>
 		<div class="choice">
 		  <div class="title">Сортировка:</div>
 		  <div class="option">
@@ -60,24 +62,27 @@
 		<div class="choice">
 		  <div class="title">Цена: 100 руб. - 500 руб.</div>
 		  <div class="option">
-		    <div class="range">
+		    <div class="range-box">
+		      <div class="range"></div>
 			  <div class="price-range"></div>
+			  <div class="toggle min-toggle"></div>
+			  <div class="toggle max-toggle"></div>
 			</div>
-			<div class="toggle min-toggle"></div>
-			<div class="toggle max-toggle"></div>
 		  </div>
 		</div>
 		<div class="choice">
 		  <div class="title">Жирность:</div>
 		  <div class="option">
-		    <input type="radio" id="btn-1">
+		    <div class="radio">
+		      <input type="radio" id="btn-1">
 			  <label for="btn-1">0%</label>
-			<input type="radio" id="btn-2" checked>
+			  <input type="radio" id="btn-2" checked>
 			  <label for="btn-2">до 10%</label>
-			<input type="radio" id="btn-3">
+			  <input type="radio" id="btn-3">
 			  <label for="btn-3">до 30%</label>
-			<input type="radio" id="btn-4">
+			  <input type="radio" id="btn-4">
 			  <label for="btn-4">выше 30%</label>
+			</div>
 		  </div>
 		</div>
 		<div class="choice">
@@ -96,78 +101,106 @@
 		  </div>
 		</div>
 		<div class="choice">
-		  <input type="submit" value="Применить">
+		  <div class="submit">
+		    <input type="submit" value="Применить">
+	      </div>
 		</div>
-		<section class="icecream">
+		<section class="icecream clearfix">
 		  <article class="cream orange">
-		    <div class="price">310</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">310</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с апельсиновым джемом и цитрусовой струйкой</a>
 		  </article>
 		  <article class="cream coffee">
-		    <div class="price">380</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">380</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 		  </article>
 		  <article class="cream strawberry">
-		    <div class="price">355</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">355</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочно-клубничный с присипкой из белого шоколада</a>
 		  </article>
 		  <article class="cream caramel">
-		    <div class="price">415</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">415</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 		  </article>
 		  <article class="cream cowberry">
-		    <div class="price">325</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">325</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с брусничным джемом</a>
 		  </article>
 		  <article class="cream blueberry">
-		    <div class="price">410</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">410</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 		  </article>
 		  <article class="cream lemon">
-		    <div class="price">375</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">375</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 		  </article>
 		  <article class="cream chocolate">
-		    <div class="price">320</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">320</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с шоколадной стружкой</a>
 		  </article>
 		  <article class="cream vanil">
-		    <div class="price">440</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">440</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочно-ванильное с кусочками шоколада</a>
 		  </article>
 		  <article class="cream menthol">
-		    <div class="price">435</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">435</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с ментоловым сиропом</a>
 		  </article>
 		  <article class="cream dark-chocolate">
-		    <div class="price">355</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">355</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с кусочками черного шоколада</a>
 		  </article>
 		  <article class="cream spearmint">
-		    <div class="price">420</div>
-			<div class="mass">/кг</div>
+		    <div class="price-mass">
+			  <span class="price">420</span>
+			  <span class="mass">/кг</span>
+			</div>
 			<a href="#">Сливочное с мятным сиропом</a>
 		  </article>
         </section>
 		<div class="pages">
-		  <a class="prev" href="#"></a>
-		  <a class="active" href="#">1</a>
-		  <a href="#">2</a>
-		  <a href="#">3</a>
-		  <a href="#">4</a>
-		  <a href="#">5</a>
-		  <a class="next" href="#"></a>
+		  <ul class="page-list">
+		    <li><a class="prev" href="#"></a></li>
+		    <li><a class="active" href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a class="next" href="#"></a></li>
+		  </ul>
 		</div>
 	  </div>
 	</main>  
@@ -179,7 +212,7 @@
 			  <a class="social social-tw" href="#">tw</a>
 			</li>
 		    <li>
-			  <a class="social social-ins" href="#">ins</a>
+			  <a class="social social-inst" href="#">inst</a>
 			</li>
 		    <li>
 			  <a class="social social-fb" href="#">fb</a>
@@ -189,10 +222,10 @@
 			</li>
 		  </ul>
 		</section>
-		<section class="footer-reference">
+		<section class="footer-reference clearfix">
 		  <ul class="reference-left">
 		    <li>
-			  <a href="#">Для поставщиков</a>
+			  <a href="#"><b>Для поставщиков</b></a>
 			</li>  
 		    <li>
 			  <a href="#">О производстве</a>
@@ -209,12 +242,10 @@
 		</section>
 		<section class="footer-copyright">
 		  <div class="cite-icon">
-		    <a href="https://htmlacademy.ru/">
-			  <img src="img/index-footerLogo.svg">
-			</a>
+		    <a href="https://htmlacademy.ru/"></a>
 		  </div>
-		  <div class="cite-info">Сделано в
-		   <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016
+		  <div class="cite-info">
+		    Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016
           </div>		   
 		</section>
 	  </div>	
