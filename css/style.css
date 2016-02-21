@@ -197,6 +197,9 @@ body > input[type="radio"] {
 	border-radius:5px;
 	border:1px solid #d3d3d2;
 }
+.search-area input[type="search"]:hover {
+	border:1px solid #d3d3d2;
+}
 .user-block-icons .login {
 	position:relative;
 	padding-top:7px;
@@ -231,7 +234,10 @@ body > input[type="radio"] {
 	font-weight:400;
 	color:#999999;
 	background-color:#ffffff;
+    border:1px solid #d3d3d2;
 	border-radius:5px;
+}
+.login-area input[type="email"]:hover {
 	border:1px solid #d3d3d2;
 }
 .login-area input[type="password"] {
@@ -246,6 +252,9 @@ body > input[type="radio"] {
 	background-color:#ffffff;
 	border-radius:5px;
 	border:1px solid #d3d3d2;
+}
+.login-area input[type="password"]:hover {
+	border:1px solid #d3d3d2;
 }	
 .login-area input[type="submit"] {
 	float:left;
@@ -256,11 +265,12 @@ body > input[type="radio"] {
 	line-height:25px;
 	font-weight:700;
 	color:#fefefe;
+	border:none;
     background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-    border-radius:25px;
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+	border-radius:25px;
 }
 .login-area input[type="submit"]:hover {
     background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -273,7 +283,7 @@ body > input[type="radio"] {
     background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
-}
+}	
 .login-ref {
 	float:left;
 	width:120px;
@@ -376,11 +386,11 @@ td {
 	text-align:right;
 }
 .site-wrapper {
-    min-width: 1148px;
+    min-width: 1240px;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: top center;
-    transition: background-image 0.5s ease, background-color 0.5s ease;
+    transition: background-image 0.5s ease, background-color 0.5s ease; 
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -398,7 +408,7 @@ td {
 }
 
 .content-wrapper {
-    width: 1108px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -575,6 +585,15 @@ td {
     border-radius:10px;
     z-index:100;	
 }
+.cover-1 {
+	z-index:120;
+}
+.cover-2 {
+	z-index:110;
+}
+.cover-3 {
+	z-index:100;
+}
 .cream-cover .button {
 	position:absolute;
 	display:none;
@@ -624,7 +643,7 @@ td {
 	width:61px;
 	height:61px;
 	font-size:0;
-	background:url("../img/hit.png") no-repeat;
+	background:url("../img/index-h.png") no-repeat;
 }
 .cream .price-mass {
 	position:relative;
@@ -808,7 +827,7 @@ input[type="email"] {
 }
 .map {
 	margin:0 auto;
-	margin-top:40px;
+    margin-top:40px;
 	width:1200px;
 	height:430px;
 	background:url("../img/index-map.jpg") no-repeat;
@@ -851,12 +870,17 @@ input[type="email"] {
 }
 .contacts a {
 	display:block;
-	width:188px;
+	width:187px;
 	padding:10px 32px;
 	font-size:17px;
-	line-height:24px;
+	line-height:25px;
+	color:#fefefe;
 	font-weight:700;
 	border-radius:25px;	
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .breadcrumbs {
 	margin:0;
