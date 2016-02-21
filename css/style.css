@@ -792,10 +792,13 @@ td {
 .subscription {
 	position:relative;
 	float:right;
-	width:506px;
-	padding:30px 26px 40px;
+	width:560px;
+	height:220px;
 	background:url("../img/index-border.png") no-repeat;
 	border-radius:10px;
+}
+.sub-cover {
+	padding:30px 26px 40px;
 }
 .subscription p {
 	margin:0;
@@ -807,7 +810,7 @@ td {
 	font-weight:400;
 }
 input[type="email"] {
-	width:344px;
+	width:345px;
 	margin-right:8px;
 	padding:10px;
 	font-size:16px;
