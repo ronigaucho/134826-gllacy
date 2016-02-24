@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<title>Личный проект «Глейси»</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
@@ -16,12 +16,12 @@
   <header class="main-header">
 	<div class="container clearfix">
 	  <a class="logo" href="#">
-		<img src="img/index-logo.svg" alt="main-logo">
+		<img src="img/index-logo.svg" width="154" height="64" alt="main-logo">
       </a>
 	  <nav class="main-navigation">
         <ul class="main-menu">
           <li>
-            <a href="#">Каталог</a>
+            <a href="../134826-gllacy/catalog.html">Каталог</a>
 			<ul class="sub-menu">
 		      <li class="title">Новинки</li>
 		      <li><a href="#">Сливочное</a></li>
@@ -70,17 +70,17 @@
 			<div class="cart-area">
 			  <table>
 				<tr>
-				  <td><img src="img/x.svg" alt="small-photo3"></td>
-			      <td><img src="img/small-cream-1.png" alt="small photo1"></td>
+				  <td><img src="img/x.svg" width="11" height="11" alt="small-photo3"></td>
+			      <td><img src="img/small-cream-1.png" width="33" height="33" alt="small photo1"></td>
 				  <td class="td-3">Пломбир с апельсиновым джемом</td>
-				  <td class="td-4">1.5 кг x 200 руб.</td>
+				  <td class="td-4">1.5 кг x <span class="clr">200 руб.</span></td>
 				  <td class="td-5">300 руб.</td>
 				</tr>
 				<tr class="line">
-				   <td><img src="img/x.svg" alt="small-photo4"></td>
-				   <td><img src="img/small-cream-2.png" alt="small photo2"></td>
+				   <td><img src="img/x.svg" width="11" height="11" alt="small-photo4"></td>
+				   <td><img src="img/small-cream-2.png" width="33" height="33" alt="small photo2"></td>
 				   <td class="td-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-				   <td class="td-4">1.5 кг x 300 руб.</td>
+				   <td class="td-4">1.5 кг x <span class="clr">300 руб.</span></td>
 				   <td class="td-5">450 руб.</td>
 				</tr>
 				<tr>
@@ -94,7 +94,7 @@
 			</div>
 	      </li>
 		</ul>
-        <div class="schedule">с 10 до 20 ,ежедневно</div>
+        <div class="schedule">С 10 до 20 ,ежедневно</div>
 		<div class="phone"><a href="tel:88124502525">8 812 450-25-25</a></div>
 	  </div>
     </div>
@@ -123,7 +123,7 @@
       <section class="free clearfix">		
         <article class="free-raspberry">
 		  <h2 class="free-header">Малинка даром!</h2>
-		  <p>При покупке 2кг любого фруктого мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+		  <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 		  <a class="button" href="#">Хочу варенья!</a> 
         </article>
         <article class="free-chocolate">
@@ -135,7 +135,7 @@
       <section class="icecream clearfix">
 		<article class="cream-cover">
 		  <div class="cream orange">
-		    <img src="img/index-orange.png" alt="orange">
+		    <img src="img/index-orange.png" width="267" height="267" alt="orange">
 			<div class="popular">Хит</div>
 		    <div class="price-mass">
 			  <span class="price">310</span>
@@ -147,7 +147,7 @@
 		</article>
 		<article class="cream-cover"> 
 		  <div class="cream coffee">
-		    <img src="img/index-coffee.png" alt="coffee">
+		    <img src="img/index-coffee.png" width="267" height="267" alt="coffee">
 			<div class="popular">Хит</div>
 		    <div class="price-mass">
 			  <span class="price">380</span>
@@ -159,7 +159,7 @@
 		</article>
 		<article class="cream-cover">
 		  <div class="cream strawberry">
-		    <img src="img/index-strawberry.png" alt="strawberry">
+		    <img src="img/index-strawberry.png" width="267" height="267" alt="strawberry">
 			<div class="popular">Хит</div>
 		    <div class="price-mass">
 			  <span class="price">355</span>
@@ -171,7 +171,7 @@
 		</article>
 		<article class="cream-cover">
 		  <div class="cream caramel">
-		    <img src="img/index-caramel.png" alt="caramel">
+		    <img src="img/index-caramel.png" width="267" height="267" alt="caramel">
 			<div class="popular">Хит</div>
 		    <div class="price-mass">
 			  <span class="price">415</span>
@@ -201,15 +201,13 @@
 		    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 		  </div>
           <div class="subscription">
-		   <div class="sub-cover">
 		    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит.
 		       Обещаем не спамить и не слать всякой не нужной ерунды.Честно =)</p>
 		    <form action="#" method="post">
 		      <label class="top" for="subscribe">Электронная почта</label>
 			  <input type="email" name="email" placeholder="Электронная почта" id="subscribe">
 			  <input type="submit" value="Отправить" class="button">
-		    </form>
-           </div>			
+		    </form>			
 		  </div>
 		</section>
 	  </div>
@@ -226,7 +224,11 @@
 			  <p class="bold">8 812 450-25-25</p>
 			  <p>(с 10 до 20 ежедневно)</p>
 			</div>
-			<a class="button">Форма обратной связи</a>			  
+			<a class="button" href="#">Форма обратной связи</a>
+			<div class="contacts-form">
+			  <label class="top" for="user-form">Как вас зовут?</label>
+			  <input type="text" id="user-form" placeholder="Как вас зовут?">
+			</div>
 		  </div>
 		</div>
       </div>

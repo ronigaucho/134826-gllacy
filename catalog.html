@@ -4,14 +4,14 @@
     <meta charset="utf-8">
 	<title>Личный проект «Глейси»</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
 	  <div class="container clearfix">
 	    <a class="logo" href="#">
-		  <img src="img/index-logo.svg" alt="main-logo">
+		  <img src="img/index-logo.svg" width="154" height="64" alt="main-logo">
 		</a>
 		<nav class="main-navigation">
           <ul class="main-menu">
@@ -39,8 +39,8 @@
 			  <a class="search"></a>
 			  <div class="search-area">
 			    <form action="#" method="post">
-			    <label class="top" for="search-id">Что ищем!</label>
-				<input type="search" name="searching" placeholder="Что ищем!" id="search-id">
+			      <label class="top" for="search-id">Что ищем!</label>
+				  <input type="search" name="searching" placeholder="Что ищем!" id="search-id">
 				</form>
 			  </div>
 			</li>
@@ -53,10 +53,10 @@
 			      <label class="top" for="login-id2">Пароль</label>
 				  <input type="password" name="password" placeholder="Пароль" id="login-id2">
 				  <input type="submit" value="Войти" class="button">
-				<div class="login-ref">
-				  <a href="#">Забыли пароль?</a>
-				  <a href="#">Новая регистрация</a>
-				</div>
+				  <div class="login-ref">
+				    <a href="#">Забыли пароль?</a>
+				    <a href="#">Новая регистрация</a>
+				  </div>
 				</form>
 			  </div>
 		    </li>
@@ -65,24 +65,21 @@
 			  <div class="cart-area">
 			    <table>
 				  <tr>
-				    <td><img src="img/x.svg" alt="small-photo3"></td>
-					<td><img src="img/small-cream-1.png" alt="small-photo1"></td>
+				    <td><img src="img/x.svg" width="11" height="11" alt="small-photo3"></td>
+					<td><img src="img/small-cream-1.png" width="33" height="33" alt="small-photo1"></td>
 					<td class="td-3">Пломбир с апельсиновым джемом</td>
-					<td class="td-4">1.5 кг x 200 руб.</td>
+					<td class="td-4">1.5 кг x <span class="clr">200 руб.<span></td>
 					<td class="td-5">300 руб.</td>
 				  </tr>
 				  <tr class="line">
-				    <td><img src="img/x.svg" alt="small-photo4"></td>
-					<td><img src="img/small-cream-2.png" alt="small-photo2"></td>
+				    <td><img src="img/x.svg" width="11" height="11" alt="small-photo4"></td>
+					<td><img src="img/small-cream-2.png" width="33" height="33" alt="small-photo2"></td>
 					<td class="td-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-					<td class="td-4">1.5 кг x 300 руб.</td>
+					<td class="td-4">1.5 кг x <span class="clr">300 руб.</span></td>
 					<td class="td-5">450 руб.</td>
 				  </tr>
 				  <tr>
-				    <td></td>
-					<td></td>
-					<td></td>
-					<td colspan="2" class="total"><b>Итого: 750 руб.</b></td>
+					<td colspan="5" class="total"><b>Итого: 750 руб.</b></td>
 				  </tr>
 				</table>
                 <a class="button">Оформить заказ!</a>				
@@ -113,6 +110,9 @@
 		  <div class="option">
 		    <select>
 		      <option>по популярности</option>
+			  <option>сначала недорогие</option>
+			  <option>сначала дорогие</option>
+			  <option>по жирности</option>
 		    </select>
 		  </div>
 		</div>
@@ -165,7 +165,7 @@
 		<section class="icecream clearfix">
 		<article class="cream-cover cover-1">
 		  <div class="cream orange">
-		    <img src="img/index-orange.png" alt="orange">
+		    <img src="img/index-orange.png" width="267" height="267" alt="orange">
 		    <div class="price-mass">
 			  <span class="price">310</span>
 			  <span class="mass">/кг</span>
@@ -176,7 +176,7 @@
 		</article>
 		<article class="cream-cover cover-1">
 		  <div class="cream coffee">
-		    <img src="img/index-coffee.png" alt="coffee">
+		    <img src="img/index-coffee.png" width="267" height="267" alt="coffee">
 		    <div class="price-mass">
 			  <span class="price">380</span>
 			  <span class="mass">/кг</span>
@@ -187,7 +187,7 @@
 		</article>
 		<article class="cream-cover cover-1">
 		  <div class="cream strawberry">
-		    <img src="img/index-strawberry.png" alt="strawberry">
+		    <img src="img/index-strawberry.png" width="267" height="267" alt="strawberry">
 		    <div class="price-mass">
 			  <span class="price">355</span>
 			  <span class="mass">/кг</span>
@@ -198,7 +198,7 @@
 		</article>
 		<article class="cream-cover cover-1">
 		  <div class="cream caramel">
-		    <img src="img/index-caramel.png" alt="caramel">
+		    <img src="img/index-caramel.png" width="267" height="267" alt="caramel">
 		    <div class="price-mass">
 			  <span class="price">415</span>
 			  <span class="mass">/кг</span>
@@ -209,7 +209,7 @@
 		</article>
 		<article class="cream-cover cover-2">
  		  <div class="cream cowberry">
-		    <img src="img/catalog-cowberry.png" alt="cowberry">
+		    <img src="img/catalog-cowberry.png" width="267" height="267" alt="cowberry">
 		    <div class="price-mass">
 			  <span class="price">325</span>
 			  <span class="mass">/кг</span>
@@ -220,7 +220,7 @@
 		</article>
 		<article class="cream-cover cover-2">
 		  <div class="cream blueberry">
-		    <img src="img/catalog-blueberry.png" alt="blueberry">
+		    <img src="img/catalog-blueberry.png" width="267" height="267" alt="blueberry">
 		    <div class="price-mass">
 			  <span class="price">410</span>
 			  <span class="mass">/кг</span>
@@ -231,7 +231,7 @@
 		</article>
 		<article class="cream-cover cover-2">
 		  <div class="cream lemon">
-		    <img src="img/catalog-lemon.png" alt="lemon">
+		    <img src="img/catalog-lemon.png" width="267" height="267" alt="lemon">
 		    <div class="price-mass">
 			  <span class="price">375</span>
 			  <span class="mass">/кг</span>
@@ -242,7 +242,7 @@
 		</article>
 		<article class="cream-cover cover-2">
 		  <div class="cream chocolate">
-		    <img src="img/catalog-chocolate.png" alt="chocolate">
+		    <img src="img/catalog-chocolate.png" width="267" height="267" alt="chocolate">
 		    <div class="price-mass">
 			  <span class="price">320</span>
 			  <span class="mass">/кг</span>
@@ -253,7 +253,7 @@
 		</article>
 		<article class="cream-cover cover-3">
 		  <div class="cream vanil">
-		    <img src="img/catalog-vanil.png" alt="vanil">
+		    <img src="img/catalog-vanil.png" width="267" height="267" alt="vanil">
 		    <div class="price-mass">
 			  <span class="price">440</span>
 			  <span class="mass">/кг</span>
@@ -264,7 +264,7 @@
 		</article>
 		<article class="cream-cover cover-3">
 		  <div class="cream menthol">
-		    <img src="img/catalog-menthol.png" alt="menthol">
+		    <img src="img/catalog-menthol.png" width="267" height="267" alt="menthol">
 		    <div class="price-mass">
 			  <span class="price">435</span>
 			  <span class="mass">/кг</span>
@@ -275,7 +275,7 @@
 		</article>
 		<article class="cream-cover cover-3">
 		  <div class="cream dark-chocolate">
-		    <img src="img/catalog-dark.png" alt="dark-chocolate">
+		    <img src="img/catalog-dark.png" width="267" height="267" alt="dark-chocolate">
 		    <div class="price-mass">
 			  <span class="price">355</span>
 			  <span class="mass">/кг</span>
@@ -286,7 +286,7 @@
 		</article>
 		<article class="cream-cover cover-3">
 		  <div class="cream spearmint">
-		    <img src="img/catalog-spearmint.png" alt="spearmint">
+		    <img src="img/catalog-spearmint.png" width="267" height="267" alt="spearmint">
 		    <div class="price-mass">
 			  <span class="price">420</span>
 			  <span class="mass">/кг</span>
