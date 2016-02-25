@@ -16,16 +16,16 @@
   <header class="main-header">
 	<div class="container clearfix">
 	  <a class="logo" href="#">
-		<img src="img/index-logo.svg" width="154" height="64" alt="main-logo">
+		<img src="img/index-logo.svg" width="154" height="63" alt="main-logo">
       </a>
 	  <nav class="main-navigation">
         <ul class="main-menu">
           <li>
             <a href="../134826-gllacy/catalog.html">Каталог</a>
 			<ul class="sub-menu">
-		      <li class="title">Новинки</li>
+		      <li class="title"><a href="#">Новинки</a></li>
 		      <li><a href="#">Сливочное</a></li>
-			  <li><a class="active" href="#">Щербеты</a></li>
+			  <li><a href="#">Щербеты</a></li>
 			  <li><a href="#">Фруктовый лед</a></li>
 			  <li><a href="#">Мелорин</a></li>
 		    </ul>  
@@ -66,7 +66,8 @@
 			</div>
 		  </li>
 	      <li>
-			<a class="cart">Пусто</a>
+			<a class="cart-empty">Пусто</a>
+			<a class="cart-full">2 товара</a>
 			<div class="cart-area">
 			  <table>
 				<tr>
@@ -226,8 +227,13 @@
 			</div>
 			<a class="button" href="#">Форма обратной связи</a>
 			<div class="contacts-form">
-			  <label class="top" for="user-form">Как вас зовут?</label>
-			  <input type="text" id="user-form" placeholder="Как вас зовут?">
+			  <h3 class="user-header">Мы обязательно вам ответим!</h3>
+			  <form>
+			    <input type="text" placeholder="Как вас зовут?">
+			    <input type="text" placeholder="Ваша почта для ответа?">
+				<textarea rows="6" placeholder="Напишите что нибудь..."></textarea>
+				<input type="submit" value="Отправить">
+			  </form>	
 			</div>
 		  </div>
 		</div>
